@@ -4,6 +4,7 @@ import { Layout } from '@/shared/components/layout'
 import { motion } from 'framer-motion'
 import { Button } from '@/shared/components/button'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
+import { Accordion, AccordionItem } from '@/shared/components/accordion'
 
 function BackgroundBlobs() {
   return (
@@ -162,6 +163,17 @@ export function HomePage() {
           <Card></Card>
           <Card></Card>
           */}
+        </section>
+        <section
+          id="faq"
+          className="flex h-screen flex-col items-center justify-center"
+        >
+          <h1 className="mb-12 text-6xl font-semibold">FAQ</h1>
+          <Accordion>
+            <AccordionItem title="Pergunta 1">Resposta 1</AccordionItem>
+            <AccordionItem title="Pergunta 2">Resposta 2</AccordionItem>
+            <AccordionItem title="Pergunta 3">Resposta 3</AccordionItem>
+          </Accordion>
         </section>
       </Layout>
     </Background>
